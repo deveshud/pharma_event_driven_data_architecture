@@ -1,0 +1,4 @@
+product_code,brand_name,therapy_area,launch_date,lifecycle_stage
+P001,CardioX,Cardiology,2023-06-01,Growth
+P002,OncoY,Oncology,2022-03-15,Mature
+P003,DermiZ,Dermatology,2024-02-01,Launch

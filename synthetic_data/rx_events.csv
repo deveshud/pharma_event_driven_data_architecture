@@ -1,0 +1,13 @@
+rx_id,rx_date,product_code,hcp_id,quantity,days_supply,region,payer_type,channel
+RX001,2026-02-01,P001,HCP001,30,30,North,Commercial,Retail
+RX002,2026-02-01,P002,HCP002,30,30,South,Medicare,Specialty
+RX003,2026-02-02,P001,HCP005,60,60,North,Commercial,Retail
+RX004,2026-02-02,P003,HCP004,30,30,West,Commercial,Specialty
+RX005,2026-02-03,P001,HCP001,30,30,North,Commercial,Retail
+RX006,2026-02-03,P002,HCP002,60,60,South,Commercial,Hospital
+RX007,2026-02-04,P003,HCP004,30,30,West,Commercial,Retail
+RX008,2026-02-04,P001,HCP003,30,30,East,Medicaid,Retail
+RX009,2026-02-05,P002,HCP002,30,30,South,Commercial,Specialty
+RX010,2026-02-05,P001,HCP005,30,30,North,Commercial,Retail
+RX011,2026-02-06,P003,HCP004,60,60,West,Medicare,Specialty
+RX012,2026-02-06,P001,HCP001,30,30,North,Commercial,Retail

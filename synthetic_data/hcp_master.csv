@@ -1,0 +1,6 @@
+hcp_id,specialty,territory,engagement_tier
+HCP001,Cardiology,North,Tier_1
+HCP002,Oncology,South,Tier_2
+HCP003,Endocrinology,East,Tier_3
+HCP004,Dermatology,West,Tier_2
+HCP005,Neurology,North,Tier_1
