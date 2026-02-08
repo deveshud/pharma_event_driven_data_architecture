@@ -1,2 +1,3 @@
 s3_drops/
 snowflake/secrets.sql
+dbt_transformations/profiles.yml
