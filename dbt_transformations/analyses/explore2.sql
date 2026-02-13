@@ -1,0 +1,1 @@
+select max(to_date(load_ts)),count(*) from {{ ref('hcp_master_bronze') }}
