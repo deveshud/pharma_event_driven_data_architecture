@@ -1,13 +1,13 @@
 version: 2
 
 sources:
-  - name: RAW
+  - name: raw
     database: PHARMA_PLATFORM
-    schema: RAW
+    schema: raw
     config:
       enabled: true
     tables:
-      - name: HCP_MASTER_RAW
+      - name: hcp_master_raw
         columns:
           - name: hcp_id
             tests:
@@ -21,7 +21,7 @@ sources:
           - name: engagement_tier
             tests:
               - not_null
-      - name: PRODUCT_MASTER_RAW  # enabled
-      - name: RX_EVENTS_RAW  # not enabled
+      - name: product_master_raw  # enabled
+      - name: rx_events_raw  # not enabled
         config:
           enabled: true
