@@ -14,5 +14,8 @@ from
 {{source('raw', 'hcp_master_raw')}}
 
 {% if is_incremental() %}
-  where to_date(load_ts) >= coalesce((select max(to_date(load_ts)) from {{ this }}), '1900-01-01')
+  where load_ts > 
+  (
+    select max(load_ts) from {{ this }}
+    )
 {% endif %} 

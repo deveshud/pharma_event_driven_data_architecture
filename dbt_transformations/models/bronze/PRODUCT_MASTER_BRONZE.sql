@@ -1,5 +1,21 @@
+{{
+  config(
+    materialized = 'incremental',
+    )
+}}
 select *,
-to_date(load_ts) as data_date,
+to_date(load_ts) as load_date,
+to_date(
+  regexp_substr(src_file, 'dt=([0-9]{4}-[0-9]{2}-[0-9]{2})', 1, 1, 'e', 1),
+  'YYYY-MM-DD'
+) as data_date,
 {{ audit_cols() }}
 from
 {{source('raw', 'product_master_raw')}}
+
+{% if is_incremental() %}
+  where load_ts > 
+  (
+    select max(load_ts) from {{ this }}
+    )
+{% endif %} 
