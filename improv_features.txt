@@ -1,3 +1,7 @@
 1. metadata pipelining across all layers
 2. testing and test cases addition
 3. cortex model in snowflake
+4. dev uat prod environment update
+5. multiple data loads
+6. parameterization
+7. github actions
