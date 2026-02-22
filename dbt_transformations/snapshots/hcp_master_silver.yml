@@ -1,0 +1,11 @@
+snapshots:
+  - name: hcp_master_silver
+    relation: ref('hcp_master_ephemeral')
+    config:
+      schema: silver
+      alias: hcp_master_silver
+      strategy: check
+      unique_key: hcp_id
+      check_cols: [hcp_id, specialty,territory,engagement_tier]
+#      dbt_valid_to_current: true
+      hard_deletes: ignore

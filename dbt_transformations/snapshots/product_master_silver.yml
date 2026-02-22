@@ -1,0 +1,11 @@
+snapshots:
+- name: product_master_silver
+  relation: ref('product_master_ephemeral')
+  config:
+        schema: silver
+        alias: product_master_silver
+        strategy: check
+        unique_key: product_code
+        check_cols: [product_code, brand_name, therapy_area, launch_date,lifecycle_stage]
+#        dbt_valid_to_current: "to_date('9999-12-31')"
+        hard_deletes: ignore

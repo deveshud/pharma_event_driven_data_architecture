@@ -31,7 +31,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_transformations:
+    +transient: false
     +materialized: table
     bronze:
       +materialized: table
       +schema: bronze
+    silver:
+      +materialized: table
+      +schema: silver
+      ephemeral:
+        +materialized: ephemeral
+        +schema: silver
+
+snapshots:
+  +transient: false
