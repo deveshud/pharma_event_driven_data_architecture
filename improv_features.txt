@@ -6,3 +6,4 @@
 6. parameterization
 7. github actions
 8. ci/cd establishment in github
+9. Update project documentation
