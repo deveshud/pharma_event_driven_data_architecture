@@ -7,3 +7,4 @@
 7. github actions
 8. ci/cd establishment in github
 9. Update project documentation
+10. update aws configuration to map each database
