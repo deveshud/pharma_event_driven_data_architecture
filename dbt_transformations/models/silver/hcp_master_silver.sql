@@ -1,0 +1,1 @@
+select * from {{ ref('hcp_master_snapshot') }}

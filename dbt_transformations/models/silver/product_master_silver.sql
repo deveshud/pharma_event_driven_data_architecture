@@ -1,0 +1,1 @@
+select * from {{ ref('product_master_snapshot') }}

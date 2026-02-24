@@ -45,6 +45,7 @@ models:
     gold:
       +materialized: table
       +schema: gold
-
+    
 snapshots:
-  +transient: false
+  dbt_transformations:
+    +schema: snapshots

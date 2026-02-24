@@ -1,13 +1,20 @@
 {% macro generate_schema_name(custom_schema_name, node) -%}
 
     {%- set default_schema = target.schema -%}
-    {%- if custom_schema_name is none -%}
+    {%- set target_name = target.name | lower -%}
 
-        {{ default_schema }}
+    {# CI override: send EVERYTHING to CI schema #}
+    {%- if target_name == 'ci' -%}
+
+        {{ 'CI' }}
 
     {%- else -%}
 
-        {{ custom_schema_name | trim }}
+        {%- if custom_schema_name is none -%}
+            {{ default_schema }}
+        {%- else -%}
+            {{ custom_schema_name | trim }}
+        {%- endif -%}
 
     {%- endif -%}
 

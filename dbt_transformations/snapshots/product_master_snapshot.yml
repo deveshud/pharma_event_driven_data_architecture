@@ -1,9 +1,9 @@
 snapshots:
-- name: product_master_silver
+- name: product_master_snapshot
   relation: ref('product_master_ephemeral')
   config:
-        schema: silver
-        alias: product_master_silver
+        schema: snapshots
+        alias: product_master_snapshot
         strategy: check
         unique_key: product_code
         check_cols: [product_code, brand_name, therapy_area, launch_date,lifecycle_stage]
