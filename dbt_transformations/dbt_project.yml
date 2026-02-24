@@ -47,4 +47,4 @@ models:
       +schema: gold
 
 snapshots:
-  +transient: false
+  +schema: snapshots
