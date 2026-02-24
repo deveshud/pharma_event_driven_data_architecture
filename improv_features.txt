@@ -4,7 +4,7 @@
 4. dev uat prod environment update - DONE
 5. multiple data loads
 6. parameterization
-7. github actions
+7. github actions - DONE
 8. ci/cd establishment in github
 9. Update project documentation
 10. update aws configuration to map each database
