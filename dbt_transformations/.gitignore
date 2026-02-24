@@ -1,6 +1,6 @@
 
 target/
 dbt_packages/
-logs/
+logs/dbt.log
 profiles.yml
 creds.yml
