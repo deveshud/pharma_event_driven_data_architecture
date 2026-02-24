@@ -42,6 +42,9 @@ models:
       ephemeral:
         +materialized: ephemeral
         +schema: silver
+    gold:
+      +materialized: table
+      +schema: gold
 
 snapshots:
   +transient: false
